@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+#navigation_list{
+  background-color:#1d232a;
+  padding:2.3em 1em;
+  text-align:center
+
+}
+.nav_icon{
+  padding:0.5em 0
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#addicon{
+  width:1em;
+  height:1em
+}
+#inbox_top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center
+}
+#imnavigation_icons{
+  display:flex;
+  flex-direction:column;
+  margin-top:2em
+}
+#inbox_list{
+  /* display:flex */
+  padding:2em;
+  width:10%;
+  color:#fff
+}
+.inbox_item{
+  display:flex;
+  justify-content: space-between;
+  margin-top:1em;
+  margin-bottom:1em
+}
+.flex-container{
+  display:flex;
+  align-items:center
+}
+.pp{
+  border-radius:50%;
+  width:2.5em;
+  height:2.5em
+}
+p{
+  margin-top:0;margin-bottom:0
+}
+#friend_list{
+  background-color:#1d232a;
+  padding:2em
+}
+.pp_name{
+  color:#fff;
+  font-size:14px
+}
+.msg_preview{
+  color:#fff;
+  font-size:12px
+}
+.last_msg{
+  color:#fff;
+  font-size:12px
+}
+#friend_section{
+  margin-top:2em
+}
+.friendlist_item{
+  padding-top:1em;
+  padding-bottom:1em
+}
+.pp-left{
+  width:90%
+}
+.pp-right{
+  width:10%
+}
+#search_section{
+  text-align:center;
+  position: relative;
+}
+input{
+  background-color:#363d45;
+  border-radius: 25px;
+    border: 2px solid #609;
+    padding: 8px; 
+    text-indent: 10%;
+      
+width:80%
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+  font-family: manrope;
+}
+
+@media screen and (max-width: 600px) {
+  #inbox_list {
+    visibility: hidden;
+    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  #friend_list {
+    visibility: hidden;
   }
 }
