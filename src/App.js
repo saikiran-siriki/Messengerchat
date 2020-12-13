@@ -3,6 +3,7 @@ import './App.css';
 import Imnavigation from './components/imnavigation'
 import Inboxmenu from './components/inboxmenu'
 import Friendlist from "./components/friendlist"
+import Chat from "./components/chat"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Imnavigation />
       <Inboxmenu />
       <Friendlist />
+      <Chat />
       </div>
       
       

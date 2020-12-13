@@ -72,7 +72,7 @@ export default class Friendlist extends React.Component {
       <div id="friend_list">
         <div id="search_section">
           
-          <input type="text" placeholder="Search" />
+          <input type="text" id="search" placeholder="Search" />
           <img src={img_path+'search.png'} style={{position:'absolute',top:'30%',left:'10%'}} alt=""/>
         </div>
         <div id="friend_section">{friend_msg_items}</div>

@@ -79,7 +79,7 @@ p{
   text-align:center;
   position: relative;
 }
-input{
+#search{
   background-color:#363d45;
   border-radius: 25px;
     border: 2px solid #609;
@@ -95,10 +95,82 @@ body{
 
 @media screen and (max-width: 600px) {
   #inbox_list {
-    visibility: hidden;
+    display: none;
     
   }
   #friend_list {
-    visibility: hidden;
+    display: none;
   }
+}
+
+
+
+#chat_msgs{
+  overflow-y:scroll;
+  display:flex;
+  flex-direction: column;
+  background-color:#eaedf1;
+  height:89vh
+}
+#chat_msgs::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#chat_msgs {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.to_chat{
+  background-color:#0084ff;
+  align-self:flex-end
+}
+.chat_item{
+  padding:20px;
+  width:fit-content;
+  max-width:80%;
+  margin-bottom:4%
+
+}
+.from_chat{
+ 
+  background-color:#fff;
+  
+}
+#chat{
+  min-height:100vh
+}
+.button{
+  background-color:#fff;
+  padding:0.5em 1em
+}
+
+#chat_options{
+  display:flex;
+  padding:10px 0px 10px 20px;
+  height:3vh
+
+}
+#other_chat_types{
+  display:flex;
+  width:40%
+}
+.chat_option_img{
+  width:33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#chat_profile_user{
+  width:60%
+}
+#chat_input{
+  width:100%;
+  height:6vh
+}
+#inp_chat{
+  width:100%;
+  height:100%
 }
